@@ -8,7 +8,7 @@ signal key_collected
 
 export var free_key_on_collect: bool = true
 
-func _enter_tree() -> void:
+func _ready() -> void:
 	connect("body_entered", self, "_on_body_entered")
 
 func _on_body_entered(_body):

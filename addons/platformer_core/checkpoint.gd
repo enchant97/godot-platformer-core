@@ -6,7 +6,7 @@ extends Area2D
 
 signal checkpoint_activated(where_global)
 
-func _enter_tree() -> void:
+func _ready() -> void:
 	connect("body_entered", self, "_on_body_entered")
 
 func _on_body_entered(_body) -> void:
